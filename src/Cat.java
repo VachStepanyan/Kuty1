@@ -3,9 +3,11 @@ public class Cat implements Joy {
     public void voice() {
         System.out.println("Cat Voice: mau");
     }
-
+        private int legs = 4;
     @Override
-    public void legs() {
-        System.out.println("Cat Legs are: 4");
+    public int legs() {
+        return legs;
     }
+
+
 }
