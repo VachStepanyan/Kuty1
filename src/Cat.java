@@ -9,5 +9,10 @@ public class Cat implements Joy {
         return legs;
     }
 
+    @Override
+    public boolean tail() {
+        return true;
+    }
+
 
 }
