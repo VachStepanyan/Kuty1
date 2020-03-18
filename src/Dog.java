@@ -5,8 +5,11 @@ public class Dog implements Joy {
         System.out.println("Dog Voice: Huh");
     }
 
+    private int legs = 4;
     @Override
-    public void legs() {
-    System.out.println(" Dog Legs are: 4");
+    public int legs() {
+        return legs;
     }
+
+
 }

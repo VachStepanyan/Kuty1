@@ -1,11 +1,13 @@
 public class Main {
     public static void main(String[] args) {
         Dog shun = new Dog();
-        shun.legs();
         shun.voice();
+        System.out.println(shun.legs());
 
         Cat katu = new Cat();
-        katu.legs();
+
         katu.voice();
+
+        System.out.println(katu.legs());
     }
 }
