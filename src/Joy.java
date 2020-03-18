@@ -1,4 +1,4 @@
  interface Joy {
-        public void voice();
-        public  int legs();
+         void voice();
+          int legs();
  }
