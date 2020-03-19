@@ -61,7 +61,8 @@ public class Worker {
     @Override
     public String toString() {
         return "Worker{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", age=" + age +
                 ", sex='" + sex + '\'' +
                 ", position='" + position + '\'' +
