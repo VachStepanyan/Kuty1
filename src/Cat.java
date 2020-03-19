@@ -1,5 +1,10 @@
 public class Cat implements Joy {
     @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    @Override
     public void voice() {
         System.out.println("Cat Voice: mau");
     }
@@ -7,6 +12,11 @@ public class Cat implements Joy {
     @Override
     public int legs() {
         return legs;
+    }
+
+    @Override
+    public boolean tail() {
+        return true;
     }
 
 
