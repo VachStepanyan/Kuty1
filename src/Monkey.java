@@ -1,16 +1,15 @@
-public class Dog implements Joy {
-
+public class Monkey  implements Joy {
     @Override
     public void voice() {
-        System.out.println("Dog Voice: Huh");
+        System.out.println("Monkey Voice: wtf");
     }
+    private int legs = 2;
 
     @Override
     public String toString() {
         return super.toString();
     }
 
-    private int legs = 4;
     @Override
     public int legs() {
         return legs;
@@ -20,6 +19,4 @@ public class Dog implements Joy {
     public boolean tail() {
         return true;
     }
-
-
 }
