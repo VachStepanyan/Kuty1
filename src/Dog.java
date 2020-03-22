@@ -1,9 +1,22 @@
 public class Dog implements Joy {
 
 
-    boolean tail = true;
-    private int legs = 4;
-    String voice = "huh huh";
+    private static boolean tail = true;
+    private static int legs = 4;
+    private static String voice = "huh huh";
+    private int age;
+    private int hight;
+    private String type;
+    private static int id=0;
+
+    public Dog(int age, int hight, String type) {
+        this.age = age;
+        this.hight = hight;
+        this.type = type;
+        id++;
+
+    }
+
 
     @Override
     public void voice() {
@@ -21,6 +34,30 @@ public class Dog implements Joy {
     }
 
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public int getHight() {
+        return hight;
+    }
+
+    public void setHight(int hight) {
+        this.hight = hight;
+    }
+
     @Override
     public String toString() {
         if(tail){
@@ -28,5 +65,7 @@ public class Dog implements Joy {
         } else
             return "Dog have " + legs + " legs and it does not have a tail and it have voice " +  voice;
     }
+
+
 
 }

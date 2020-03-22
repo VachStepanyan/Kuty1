@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 
 public class Worker {
-    private int id;
+    private static int id=0;
     private String name;
     private int age;
     private String sex;
     private String position;
 
-    public Worker(int id, String name, int age, String sex, String position) {
+    public Worker(String name, int age, String sex, String position) {
         this.name = name;
         this.age = age;
         this.sex = sex;
         this.position = position;
-        this.id = id;
+        this.id++;
     }
 
     public Worker() {
