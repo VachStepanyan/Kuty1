@@ -1,14 +1,14 @@
 public class Cat implements Joy {
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+
+    boolean tail = true;
+    private int legs = 4;
+    String voice = "myau myau";
 
     @Override
     public void voice() {
-        System.out.println("Cat Voice: mau");
+        System.out.println(voice);
     }
-        private int legs = 4;
+
     @Override
     public int legs() {
         return legs;
@@ -16,7 +16,15 @@ public class Cat implements Joy {
 
     @Override
     public boolean tail() {
-        return true;
+        return tail;
+    }
+
+    @Override
+    public String toString() {
+        if(tail){
+            return "Cat have " + legs + " legs and it have a tail and it have voice " +  voice;
+        } else
+            return "Cat have " + legs + " legs and it does not have a tail and it have voice " +  voice;
     }
 
 

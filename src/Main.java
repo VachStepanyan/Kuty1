@@ -1,26 +1,41 @@
+import java.util.ArrayList;
 
 public class Main {
+
+
+    private static Worker worker = new Worker();
+
     public static void main(String[] args) {
-        Dog shun = new Dog();
-        shun.voice();
-        System.out.println(shun.legs());
-        boolean s1  = shun.tail();
-        if (s1 == true)
-            System.out.println("Shuny uni poch");
-         else
-            System.out.println("Shuny chuni poch");
 
-        Cat katu = new Cat();
+//        ArrayList<Worker> list = new ArrayList<>();
+//
+//        list.add(new Worker(1,"Vaspur",42,"Male","Security"));
+//        list.add(new Worker(2,"Gago",43,"Male","Director"));
+//
+//        int id = 1;
+//
+//
+//        // es do n a
+//        for (int i = 0; i < list.size(); i++) {
+//            System.out.println(list.get(i).toString());
+//        }
+//        System.out.println();
+//
+//
+//
+//        // senc pti gtnes bolor workernerit mejic specific workeri
+//        for (Worker worker : list) {
+//            if(worker.getId() == id){
+//                list.remove(worker);
+//            }
+//        }
+//
+//        // es posle n a
+//        for (int i = 0; i < list.size(); i++) {
+//            System.out.println(list.get(i).toString());
+//        }
 
 
 
-        katu.voice();
-
-        System.out.println(katu.legs());
-        boolean s2  = katu.tail();
-        if (s2 == true)
-            System.out.println("Katun uni poch");
-        else
-            System.out.println("Katun  chuni poch");
     }
 }

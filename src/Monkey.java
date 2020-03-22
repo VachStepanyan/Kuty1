@@ -1,13 +1,12 @@
 public class Monkey  implements Joy {
-    @Override
-    public void voice() {
-        System.out.println("Monkey Voice: wtf");
-    }
+
+    boolean tail = true;
     private int legs = 2;
+    String voice = "wtf wtf";
 
     @Override
-    public String toString() {
-        return super.toString();
+    public void voice() {
+        System.out.println(voice);
     }
 
     @Override
@@ -17,6 +16,15 @@ public class Monkey  implements Joy {
 
     @Override
     public boolean tail() {
-        return true;
+        return tail;
+    }
+
+
+    @Override
+    public String toString() {
+        if(tail){
+            return "Monkey have " + legs + " legs and it have a tail and it have voice " +  voice;
+        } else
+            return "Monkey have " + legs + " legs and it does not have a tail and it have voice " +  voice;
     }
 }
