@@ -19,7 +19,7 @@ public class Zoo extends Main {
         boolean f  = true;
         Scanner scan = new Scanner(System.in);
         ArrayList<Worker> list = new ArrayList<>();
-        int inputedValue, s1, s2, inputValueForAnimals, s4,  id,workerInputValue;
+        int inputedValue, s1, removeAnimal, inputValueForAnimals, s4,  id,workerInputValue;
         System.out.println("Welcome to our zoo, press 1 for information, press 2 to see animal list, press 3 for Worker's list");
         inputedValue = scan.nextInt();
         switch (inputedValue) {
@@ -77,6 +77,12 @@ public class Zoo extends Main {
                                 break;
                         }
                     break;
+                    case 2:
+                        System.out.println("Please enter ID of animal you wont to remove" );
+                        removeAnimal = scan.nextInt();
+                        list.removeIf(worker -> worker.getId() == removeAnimal);
+                        System.out.println("Successfully removed!");
+                        break;
                     }
                 break;
             case 3:
@@ -93,8 +99,8 @@ public class Zoo extends Main {
                 switch (workerInputValue) {
                     case 1:
                         System.out.println("Please enter ID of worker you wont to remove" );
-                        s2 = scan.nextInt();
-                        list.removeIf(worker -> worker.getId() == s2);
+                        removeAnimal = scan.nextInt();
+                        list.removeIf(worker -> worker.getId() == removeAnimal);
                         System.out.println("Successfully removed!");
                         break;
                     case 2:
